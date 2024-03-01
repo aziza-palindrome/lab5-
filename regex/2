@@ -1,0 +1,13 @@
+import re
+
+def match(string):
+    pattern = r'ab{2,3}'
+    if re.fullmatch(pattern, string):
+        return True
+    else:
+        return False
+
+# Test cases
+test_strings = ['a', 'ab', 'abb', 'abbb', 'abbbb', 'ac', 'abc']
+for x in test_strings:
+    print(f"{x}: {match(test_string)}")

@@ -1,0 +1,12 @@
+import re
+
+def replace_chars(input_string):
+    pattern = r'[ ,.]'
+    replaced_string = re.sub(pattern, ':', input_string)
+    return replaced_string
+
+# Test case
+input_string = "This is a test, it replaces spaces. And dots, with colons."
+replaced_string = replace_chars(input_string)
+print("Original string:", input_string)
+print("Replaced string:", replaced_string)

@@ -1,0 +1,10 @@
+import re
+
+def insert_spaces(string):
+    modified_string = re.sub(r'([a-z])([A-Z])', r'\1 \2', string)
+    return modified_string
+
+input_string = "InsertSpacesBetweenWordsStartingWithCapitalLetters"
+modified_string = insert_spaces(input_string)
+print("Original string:", input_string)
+print("Modified string:", modified_string)
