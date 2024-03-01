@@ -1,2 +1,2 @@
 # lab5-
-regez
+regex
